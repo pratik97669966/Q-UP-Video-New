@@ -178,7 +178,7 @@ video {
 
 @media only screen and (max-width: 640px) {
     video {
-        width: 210px;
+        /* width: 210px; */
     }
     .main_controls_button i, span {
         font-size: 16px;
@@ -194,6 +194,6 @@ video {
 
 @media only screen and (max-width: 420px) {
     video {
-        width: 160px;
+        /* width: 160px; */
     }
 }
