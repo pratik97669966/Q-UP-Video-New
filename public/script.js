@@ -140,8 +140,8 @@ const setPlayVideo = () => {
 }); */
 
 //display room url
-var roomUrl = window.location.href;
-const html = `<h6>Room id: <span>${roomUrl}</span></h6>`;
+var roomUrl = "Q UP Video Consultation";
+const html = `<h6><span>${roomUrl}</span></h6>`;
 document.querySelector(".room_url").innerHTML = html;
 
 const copyText = document.querySelector(".room_url span");
