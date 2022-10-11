@@ -140,21 +140,21 @@ const setPlayVideo = () => {
 }); */
 
 //display room url
-// var roomUrl = window.location.href;
-// const html = `<h6>Room id: <span>${roomUrl}</span></h6>`;
-// document.querySelector(".room_url").innerHTML = html;
+var roomUrl = window.location.href;
+const html = `<h6>Room id: <span>${roomUrl}</span></h6>`;
+document.querySelector(".room_url").innerHTML = html;
 
-// const copyText = document.querySelector(".room_url span");
-// copyText.onclick = function () {
-//   document.execCommand("copy");
-// };
-// copyText.addEventListener("copy", function (event) {
-//   event.preventDefault();
-//   if (event.clipboardData) {
-//     event.clipboardData.setData("text/plain", copyText.textContent);
-//     alert("Room id copied!!!");
-//   }
-// });
+const copyText = document.querySelector(".room_url span");
+copyText.onclick = function () {
+  document.execCommand("copy");
+};
+copyText.addEventListener("copy", function (event) {
+  event.preventDefault();
+  if (event.clipboardData) {
+    event.clipboardData.setData("text/plain", copyText.textContent);
+    alert("Room id copied!!!");
+  }
+});
 
 //chat window toggle hide/unhide
 function openNav() {
