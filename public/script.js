@@ -152,7 +152,7 @@ copyText.addEventListener("copy", function (event) {
   event.preventDefault();
   if (event.clipboardData) {
     event.clipboardData.setData("text/plain", copyText.textContent);
-    alert("Room id copied!!!");
+    // alert("Room id copied!!!");
   }
 });
 
