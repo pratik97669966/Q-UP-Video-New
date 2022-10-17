@@ -82,6 +82,7 @@ video {
 }
 
 .main_header {
+    display: none;
     color: #f5f5ff;
     text-align: center;
 }
