@@ -157,9 +157,9 @@ copyText.addEventListener("copy", function (event) {
 });
 
 //chat window toggle hide/unhide
-function openNav() {
-  document.getElementById("mySidenav").style.width = "320px";
-}
+// function openNav() {
+//   document.getElementById("mySidenav").style.width = "320px";
+// }
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
