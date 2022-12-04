@@ -19,9 +19,6 @@ app.get("/", (req, res) => {
 app.get("/home", (req, res) => {
   res.render("index");
 });
-app.get("/", (req, res) => {
-  res.send("Express on Vercel");
-});
 
 app.get("/:room", (req, res) => {
   res.render("room", { roomId: req.params.room });
