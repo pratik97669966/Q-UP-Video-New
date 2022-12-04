@@ -4,7 +4,7 @@ const app = express();
 import server  from "http";
 const server2=server.Server(app);
 import io  from "socket.io";
-const io = io(server2);
+const io2 = io(server2);
 import { v4 as uuid4 } from "uuid";
 import { ExpressPeerServer } from "peer";
 const peerServer = ExpressPeerServer(server2, {
@@ -26,12 +26,12 @@ app.get("/:room", (req, res) => {
   res.render("room", { roomId: req.params.room });
 });
 
-io.on("connection", (socket) => {
+io2.on("connection", (socket) => {
   socket.on("join-room", (roomId, userId) => {
     socket.join(roomId);
     socket.to(roomId).broadcast.emit("user-connected", userId);
     socket.on("message", (message) => {
-      io.to(roomId).emit("createMessage", message);
+      io2.to(roomId).emit("createMessage", message);
     });
   });
 });
