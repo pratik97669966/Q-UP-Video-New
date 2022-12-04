@@ -1,10 +1,10 @@
-const { response } = require("express");
-const express = require("express");
+import { response } from "express";
+import express from "express";
 const app = express();
 const server = require("http").Server(app);
 const io = require("socket.io")(server);
-const { v4: uuid4 } = require("uuid");
-const { ExpressPeerServer } = require("peer");
+import { v4 as uuid4 } from "uuid";
+import { ExpressPeerServer } from "peer";
 const peerServer = ExpressPeerServer(server, {
   debug: true,
 });
