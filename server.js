@@ -1,8 +1,10 @@
 import { response } from "express";
 import express from "express";
 const app = express();
-const server = require("http").Server(app);
-const io = require("socket.io")(server);
+import server  from "http";
+const server=server.Server(app);
+import io  from "socket.io";
+const io = io(server);
 import { v4 as uuid4 } from "uuid";
 import { ExpressPeerServer } from "peer";
 const peerServer = ExpressPeerServer(server, {
