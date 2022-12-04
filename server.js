@@ -2,12 +2,12 @@ import { response } from "express";
 import express from "express";
 const app = express();
 import server  from "http";
-const server=server.Server(app);
+const server2=server.Server(app);
 import io  from "socket.io";
-const io = io(server);
+const io = io(server2);
 import { v4 as uuid4 } from "uuid";
 import { ExpressPeerServer } from "peer";
-const peerServer = ExpressPeerServer(server, {
+const peerServer = ExpressPeerServer(server2, {
   debug: true,
 });
 
@@ -36,4 +36,4 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(process.env.PORT || 3030);
+server2.listen(process.env.PORT || 3030);
