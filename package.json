@@ -10,10 +10,10 @@
   "author": "rocky",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.5",
-    "express": "^4.17.1",
-    "peer": "^0.5.3",
-    "socket.io": "^3.0.3",
-    "uuid": "^8.3.1"
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "peer": "^0.6.1",
+    "socket.io": "^4.5.4",
+    "uuid": "^9.0.0"
   }
 }
