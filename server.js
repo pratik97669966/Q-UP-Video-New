@@ -1,5 +1,5 @@
 const { response } = require("express");
-import express from 'express';
+const express = require("express");
 const app = express();
 const server = require("http").Server(app);
 const io = require("socket.io")(server);
@@ -34,4 +34,4 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(process.env.PORT || 9000);
+server.listen(process.env.PORT || 3030);
